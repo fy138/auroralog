@@ -1,4 +1,4 @@
-module auloralog
+module auroralog
 
 go 1.21.6
 

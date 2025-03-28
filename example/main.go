@@ -1,13 +1,14 @@
 package main
 
 import (
-	"aurorlog"
 	"time"
+
+	xxx "github.com/fy138/auroralog"
 )
 
 func main() {
 	// Get the singleton logger instance
-	logger := aurorlog.GetLogger()
+	logger := xxx.GetLogger()
 
 	// Set log file with rotation and retention
 	err := logger.SetLogFile("app.log", 7*24*time.Hour, 24*time.Hour) // Retain logs for 7 days, rotate daily
