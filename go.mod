@@ -1,4 +1,4 @@
-module auroralog
+module github.com/fy138/auroralog
 
 go 1.21.6
 
