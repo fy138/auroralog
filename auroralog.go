@@ -1,4 +1,4 @@
-package aurorlog
+package auroralog
 
 import (
 	"fmt"
