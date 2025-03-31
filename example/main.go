@@ -3,12 +3,12 @@ package main
 import (
 	"time"
 
-	xxx "github.com/fy138/auroralog"
+	"github.com/fy138/auroralog"
 )
 
 func main() {
 	// Get the singleton logger instance
-	logger := xxx.GetLogger()
+	logger := auroralog.GetLogger()
 
 	// Set log file with rotation and retention
 	err := logger.SetLogFile("app.log", 7*24*time.Hour, 24*time.Hour) // Retain logs for 7 days, rotate daily
@@ -17,7 +17,7 @@ func main() {
 	}
 
 	// Set the log level (DEBUG, INFO, WARN, ERROR, FATAL)
-	logger.SetLevel(aurorlog.INFO)
+	logger.SetLevel(auroralog.DEBUG)
 
 	// Log messages at different levels
 	logger.Debug("This is a debug message") // Won't be printed since log level is INFO
